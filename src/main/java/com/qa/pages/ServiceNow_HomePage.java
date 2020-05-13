@@ -39,7 +39,7 @@ public class ServiceNow_HomePage extends TestBase {
 	
 	public  void validateHomepagelogo() throws InterruptedException
 	{
-		Thread.sleep(5000);
+		Thread.sleep(3500);
 		
 		boolean logodispalyed=servicenow_logo.isDisplayed();
 		
