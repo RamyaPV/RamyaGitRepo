@@ -47,7 +47,7 @@ public class ServiceNow_HomePage extends TestBase {
 	
 	}
 	
-	public void contactusvalidation(String fn,String ln ,String bussemail,String comp,String pn) throws InterruptedException
+	public void contactusvalidation(String fn,String ln ,String bussemail,String comp,String phn) throws InterruptedException
 	{
 		contactus.click();
 		Thread.sleep(3500);
@@ -57,7 +57,7 @@ public class ServiceNow_HomePage extends TestBase {
 		lastname.sendKeys(ln);
 		businessemail.sendKeys(bussemail);
 		company.sendKeys(comp);
-		phonenumber.sendKeys(pn);
+		phonenumber.sendKeys(phn);
 		Thread.sleep(3500);
 		Select dropdown1=new Select(driver.findElement(By.xpath("//select[@name='jobLevel']")));
 		dropdown1.selectByValue("Architect");
