@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="C:\\Users\\RamyaPV\\Desktop\\Selenium\\SeleniumCucumberProject\\src\\main\\java\\com\\qa\\features",
 		glue= {"com.qa.stepdefinition"},
-		tags= {"@FunctionTest2"},
+		tags= {"@FunctionTest1"},
 		format= {"pretty","html:Test-output"}
 		)
 

@@ -22,9 +22,9 @@ public class HomePageStepDef extends TestBase {
 		   
 	}
 
-	@Then("^click on contact button on Homepage and fill the details$")
-	public void click_on_contact_button_on_Homepage_and_fill_the_details() throws Throwable {
-	    hp.contactusvalidation();
+	@Then("^click on contact button on Homepage and fill the \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void click_on_contact_button_on_Homepage_and_fill_the_and_and_and_and(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
+	   hp.contactusvalidation(arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@Then("^close the browser\\.$")

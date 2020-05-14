@@ -47,17 +47,17 @@ public class ServiceNow_HomePage extends TestBase {
 	
 	}
 	
-	public void contactusvalidation() throws InterruptedException
+	public void contactusvalidation(String fn,String ln ,String bussemail,String comp,String pn) throws InterruptedException
 	{
 		contactus.click();
 		Thread.sleep(3500);
 		Select dropdown=new Select (driver.findElement(By.xpath("//select[@class='field-size-top-large validateMessageCapture']")));
 		dropdown.selectByValue("Speak with a ServiceNow Account Executive");
-		firstname.sendKeys("Ramya");
-		lastname.sendKeys("vijay");
-		businessemail.sendKeys("pvramya89@gmail.com");
-		company.sendKeys("cts");
-		phonenumber.sendKeys("9600173638");
+		firstname.sendKeys(fn);
+		lastname.sendKeys(ln);
+		businessemail.sendKeys(bussemail);
+		company.sendKeys(comp);
+		phonenumber.sendKeys(pn);
 		Thread.sleep(3500);
 		Select dropdown1=new Select(driver.findElement(By.xpath("//select[@name='jobLevel']")));
 		dropdown1.selectByValue("Architect");
